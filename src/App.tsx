@@ -37,7 +37,7 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      <h1 style={{ textAlign: "center" }}>Create a Farm</h1>
+      <h1 className="text-center">Create a Farm</h1>
       <DynamicForm fields={farmFields} onSubmit={handleFarmCreation} />
     </div>
   );

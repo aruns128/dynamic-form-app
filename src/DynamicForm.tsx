@@ -1,12 +1,10 @@
-// src/components/DynamicFarmForm.tsx
-
 import React, { useState } from "react";
 
 interface FarmField {
   label: string;
   fieldType: string;
   fieldName: string;
-  options?: string[]; // For select field
+  options?: string[];
 }
 
 interface DynamicFormProps {
@@ -156,7 +154,7 @@ const DynamicFarmForm: React.FC<DynamicFormProps> = ({ fields, onSubmit }) => {
             )}
           </div>
         ))}
-        <div className="text-align pt-10">
+        <div className="text-center pt-10">
           <button type="submit" className="btn btn-primary">
             Create Farm
           </button>
